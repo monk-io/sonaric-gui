@@ -1,0 +1,11 @@
+namespace: /sonaric-gui
+
+latest:
+ defines: runnable
+ containers:
+   defines: containers
+   gui:
+     image: gcr.io/sonaric-releases/sonaric-gui
+     image-tag: latest
+     ports:
+       - <- `${gui-port}:8080`
