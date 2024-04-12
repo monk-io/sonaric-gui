@@ -42,7 +42,7 @@ runnable  sonaric-gui/latest     local       -        -
 ```
 ## Check web gui
 
-`http://13.48.58.56:8080/`
+`http://localhost:44004`
 
 ## Stop, remove and clean up workloads and templates
 
