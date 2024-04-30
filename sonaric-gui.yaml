@@ -7,6 +7,8 @@ latest:
     gui:
       image: us-central1-docker.pkg.dev/sonaric-platform/sonaric-public/sonaric-gui
       image-tag: main
+      paths:
+        - <- `${home-path}:/sonaric`
       ports:
         - <- `${gui-port}:8080`
         - 4000:4000
