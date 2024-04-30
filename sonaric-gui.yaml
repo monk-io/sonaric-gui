@@ -1,11 +1,12 @@
 namespace: /sonaric-gui
 
 latest:
- defines: runnable
- containers:
-   defines: containers
-   gui:
-     image: us-central1-docker.pkg.dev/sonaric-platform/sonaric-public/sonaric-gui
-     image-tag: main
-     ports:
-       - <- `${gui-port}:8080`
+  defines: runnable
+  containers:
+    defines: containers
+    gui:
+      image: us-central1-docker.pkg.dev/sonaric-platform/sonaric-public/sonaric-gui
+      image-tag: main
+      ports:
+        - <- `${gui-port}:8080`
+        - 4000:4000
