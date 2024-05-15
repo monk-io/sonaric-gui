@@ -9,4 +9,5 @@ latest:
       image-tag: main
       ports:
         - <- `${gui-port}:8080`
-        - 4000:4000
+        - 44005:44005
+        - 44006:44006
