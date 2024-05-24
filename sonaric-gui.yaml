@@ -6,7 +6,7 @@ latest:
     defines: containers
     gui:
       image: us-central1-docker.pkg.dev/sonaric-platform/sonaric-public/sonaric-gui
-      image-tag: main
+      image-tag: latest
       ports:
         - <- `${gui-port}:8080`
         - 44005:44005
