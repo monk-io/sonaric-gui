@@ -8,6 +8,6 @@ latest:
       image: us-central1-docker.pkg.dev/sonaric-platform/sonaric-public/sonaric-gui
       image-tag: latest
       ports:
-        - <- `${gui-port}:8080`
-        - 44005:44005
-        - 44006:44006
+        - <- `127.0.0.1:${gui-port}:8080`
+        - 127.0.0.1:44005:44005
+        - 127.0.0.1:44006:44006
