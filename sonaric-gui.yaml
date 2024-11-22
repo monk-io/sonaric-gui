@@ -5,7 +5,7 @@ latest:
   containers:
     defines: containers
     gui:
-      image: <- $image default("us-central1-docker.pkg.dev/sonaric-platform/sonaric-public/sonaric-gui")
+      image: <- $image default("sonaric.azurecr.io/sonaric-gui")
       image-tag: <- $image_tag default("latest")
       paths:
         - <- `${volume-path}/sonaric-gui:/opt/data`
