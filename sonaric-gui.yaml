@@ -3,7 +3,6 @@ namespace: /sonaric-gui
 latest:
   defines: runnable
   containers:
-    defines: containers
     gui:
       image: <- $image default("sonaric.azurecr.io/sonaric-gui")
       image-tag: <- $image_tag default("latest")
